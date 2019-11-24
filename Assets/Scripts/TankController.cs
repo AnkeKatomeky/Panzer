@@ -40,6 +40,11 @@ public class TankController : MonoBehaviour
         {
             EndScreen.SetActive(true);
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void LateUpdate()
